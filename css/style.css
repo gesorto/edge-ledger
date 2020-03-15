@@ -46,6 +46,7 @@ p{
     border: none;
     border-radius: 5px;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -54,6 +55,11 @@ p{
 
 .btn-dark{
     background: #333;
+    color: white;
+}
+
+.btn-dark:hover{
+    background: rgb(68, 68, 68);
     color: white;
 }
 
@@ -98,6 +104,10 @@ p{
 .list li{
     padding: 0.5rem;
     border-bottom: #444 dotted 1px;
+}
+
+.dark-text{
+    color: #444;
 }
 
 /* Navbar */
@@ -200,16 +210,28 @@ nav ul li a:hover{
     flex: 1;
 }
 
+#contact .contact-form .container-form{
+    width: 85%;
+    margin: auto;
+}
+
 #contact .contact-form .form-group{
     margin: 0.75rem;
 }
 
 #contact .contact-form label{
     display: block;
+    margin-bottom: 5px;
 }
 
-#contact .contact-form input,
+#contact .contact-form input[type=text],
+#contact .contact-form input[type=email],
 #contact .contact-form textarea{
     width: 100%;
     padding: 0.5rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
 }
